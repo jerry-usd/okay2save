@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+</head>
+<body>
+ <!-- 
+        Include the UfitPay inline javaScript Library within the <body> tags of your HTML page.
+        Remember to replace {Your-Merchant-API-Key} with your actual UfitPay merchant API Key
+    -->
+  <script src="https://embed.ufitpay.com/sxj47aNm84boWZKkpKAkyK5YroYT18"></script>
+    
+    <!-- Render your payment button with a unique element ID assigned -->
+    <button type="button" id="my_paynow_button">Pay with UfitPay</button>
+    
+    <!-- Invoke UfitPay inline payment function when your payment button is clicked  -->
+    <script>
+    document.getElementById("my_paynow_button").onclick = function(){
+        initializePayWithUfitPay({
+            resource: "paymentlink",
+            payer_name: "John Doe", 
+            payer_email: "example@email.com",
+            amount: "2000",
+            customer_identifier: "123309289056",
+            reference: "12345689adjiqdjiqbcdef",
+            validity: "30",
+            service_code: "service",
+            callback_url: "https://example.com/call_back_script",
+            return_url: "https://example.com/thank_you_page",
+            callback_function: "handleCallback"
+        });
+    };
+    
+    /* Create a javaScript function to handle callback events */
+    function handleCallback(data){
+        console.log("Payment reference: "+data.reference+", Payment status: "+data.event+", Status message: "+data.status);
+        if(data.event=="completed") {
+            // Payment has been successfully completed
+        } else {
+            // Payment wasnt done yet or has failed
+        }
+    }
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+    <title>Ok2Save</title>
+  </head>
+  <body id="body">
+  <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2 plog " onclick="window.location='home.html';">
+            <span style="font-size: 30px; font-weight: bolder; font-family: font2;">Ok2Save</span>
+          </div>
+              <div class="col-sm-1"></div>
+            <div class="col-sm-6  p36">
+              <div class="row">
+                <div class="col-sm-2 menu active" onclick="window.location='home.html#savings';">
+                Savings
+
+                </div>
+                <div class="col-sm-3 menu" onclick="window.location='home.html#investment';"> Investments </div>
+                <div class="col-sm-2 menu" onclick="window.location='home.html#loans';">Loans</div>
+                <div class="col-sm-2 menu" onclick="window.location='about.html';">About Us</div>
+                <div class="col-sm-2 menu" onclick="window.location='faq.html';">FAQs</div>
+
+              </div>
+            </div>
+        
+            <div class="col-sm-1  p36">
+                               <a href="signin.html" class="signin btn"> Sign in</a>
+                
+            
+            </div>
+             <div class="col-sm-2  p36">
+               <center>
+                  <button class="btn button1" onclick="window.location='signup.html';"> Create Free Account</button>
+               </center>
+              
+                
+              
+             </div>
+            
+        </div>
+      </div>
+    </header>
+    <div class="header">
+      <div class="row mt-2 p-3">
+        <div class="col-9">
+          <span style="font-size: 30px; font-weight: bolder; font-family: font2;" onclick="window.location='home.html';">Ok2Save</span>
+        </div>
+        <div class="col-3">
+          <button class="btn" onclick="
+
+document.getElementById('ov').style.display='block';
+document.getElementById('body').style.overflow='hidden';
+window.scrollTo(0, -10);
+          "><span class="iconify" data-icon="heroicons-solid:menu-alt-1" style="color: blue;" data-width="30"></span></button>
+        </div>
+      </div>
+    </div>
+<div class="jumbo1 container-fluid">
+  <div class="row">
+    <div class="col-sm-4"></div>
+     <div class="col-sm-4">
+       <div class="signbox">
+          <center><img src="images/aa.png" style="max-height:50px"></center>
+         <h4 class="font2 mt-3 mb-4" style="text-align: center;">Reset your email</h4>
+<form id="form">
+  
+
+            <div class="form-group mb-3">
+              <p id="res" style="color:crimson"></p>
+             <label class="mb-2">Email</label>
+           <div class="input-group mb-1">
+       
+              
+           <input type="email" name="" class="form-control"  style="border-right: none;  border-color: #dcdce6;" id="code" required="">
+                
+          </div>
+      
+           </div>
+           <center><button class="btn button1 btn-lg" id="authb1"> Reset</button></center>
+         </form>
+       </div>
+     </div>
+      <div class="col-sm-4"></div>
+  </div>
+</div>
+<div class="ov" id="ov">
+  <button class="btn"   onclick=" document.getElementById('ov').style.display='none'; document.getElementById('body').style.overflow='initial';   " style="position: relative; float:right; top:-10vh"><span class="iconify" data-icon="topcoat:cancel" style="color: #7777bd;" data-width="30"></span></button>
+  <p class="ps-4"><a href="home.html">Home</a></p>
+  <p class="ps-4"><a href="home.html#savings">Savings</a></p>
+  <p class="ps-4"><a href="home.html#investment">Investments</a></p>
+  <p class="ps-4"><a href="home.html#loans">Loans</a></p>
+   <p class="ps-4"><a href="about.html">About Us</a></p>
+    <p class="ps-4"><a href="faq.html">FAQs</a></p>
+    <center>
+       <button class="btn mt-5" style="width:70%; background: transparent; border:1px solid black; color:black" onclick="window.location='signin.html'">Sign in</button><br>
+       <button class="btn button1 mt-3" style="width:70%" onclick="window.location='signup.html'">Get Satrted</button>
+    </center>
+   
+</div>
+<div class="footer container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="images/logo.png" style="max-height:20px">
+    </div>
+       <div class="col-sm-2">
+         <h4 class="font2 mb-4"> Product</h4>
+         <a href="home.html#savings">Savings</a>
+         <a href="home.html#investment">Investments</a>
+         <a href="home.html#loans">Loans</a>
+       </div>
+          <div class="col-sm-2">
+            <h4 class="font2 mb-4"> Company</h4>
+         <a href="about.html">About Us</a>
+         <a href="faq.html">FAQS</a>
+         
+          </div>
+             <div class="col-sm-2">
+               <h4 class="font2 mb-4"> Legal</h4>
+         <a href="policies.html">Terms</a>
+         <a href="policies.html">Privacy</a>
+         <a href="policies.html">Secuirity</a>
+             </div>
+                <div class="col-sm-3">
+                   <h4 class="font2 mb-4"> Contact</h4>
+                   <div class="mb-3">
+                         <span class="iconify me-3" data-icon="ph:whatsapp-logo-fill" style="color: white;" data-width="45"></span>
+                   <span class="iconify me-3" data-icon="entypo-social:facebook-with-circle" style="color: white;" data-width="40"></span>
+                   <span class="iconify me-3" data-icon="whh:circleinstagram" style="color: white;" data-width="40"></span>
+                   </div>
+               <p>122 Alhaji Aliyu Cresent,
+Victoria Island, Lagos </p>
+<p>support@ok2save.com</p>
+<p>+234 9088844777</p>
+                </div>
+                  
+  </div>
+</div>
+<input type="hidden" name="" id="macmac">
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script type="text/javascript">
+  
+  
+</script>
+<script type="text/javascript">
+               document.getElementById('form').addEventListener("submit", authw, false);
+
+
+function authw (e){
+  e.preventDefault();
+ var data="action=fp1&email="+document.getElementById('code').value;
+
+     document.getElementById('authb1').disabled=true;
+     
+     var xhr = new XMLHttpRequest();
+     xhr.open('POST', 'dashboard/php/master.php', true);
+     xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+     xhr.onload = function () {
+if (xhr.responseText=="true") {
+
+document.getElementById("res").innerHTML="password has been reset. Please check your email / phone number";
+}
+else{
+  alert("account not found!");
+  document.getElementById('authb1').disabled=false;
+}
+console.log(xhr.responseText);
+     }
+
+        xhr.send(data);
+   
+
+}
+
+
+
+
+
+ function swi(argument) {
+ if(document.getElementById('code').type=="password"){ document.getElementById('code').type="text"; document.getElementById('basic-addon1').innerHTML='<span class="iconify" data-icon="akar-icons:eye-slashed"></span>';   } else{  document.getElementById('code').type="password"; document.getElementById('basic-addon1').innerHTML='<span class="iconify" data-icon="ant-design:eye-filled"></span>';   } 
+  }
+        </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: font1;
+    src: url("../fonts/Quicksand-Regular.ttf") format("opentype");
+
+}
+body{
+    font-family: font3;
+    overflow-x: hidden;
+    background: white;
+    color: #010B20;
+}
+header{
+    height: 90px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: #E3EBFB;
+    z-index: 8977;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.09), 0 2px 3px 0 rgba(0, 0, 0, 0.10);
+
+}
+.button1{
+    background:#256EFF;
+    color: white;
+    width: 150px;
+}
+.button1:hover{
+    color: white;
+}
+.logo{
+    height: 50px;
+}.p36{
+    padding-top: 36px;
+}
+.plog{
+    padding-top: 25px;
+}
+.jumbo{
+    height: 90vh;
+    
+    margin-top: 90px;
+    padding-top: 50px;
+    background-image:url("../images/Vectord.png") ;
+}
+
+.signin{
+    text-decoration: none;
+    color: initial;
+    border: 1px solid #010B20;
+}
+.signin:hover{
+    color: #000000;
+    font-weight: bolder;
+}
+.menu{
+    color: #000000;
+font-weight: 500;
+cursor: pointer;
+}

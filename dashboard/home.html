@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script type="text/javascript">
+            function logc (argument) {
+    
+var data="action=logchk";
+     
+     
+     var xhr = new XMLHttpRequest();
+     xhr.open('POST', '../dashboard/php/master.php', true);
+     xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+     xhr.onload = function () {
+  if (xhr.responseText=='criminal') {
+window.location='../signin.html';
+  }
+
+  if  (xhr.responseText=='dd') {
+window.location='../verify.html';
+  }
+
+     }
+    
+  xhr.send(data);
+    }
+    logc();
+        </script>
+    <title>Ok2Save / Dashboard</title>
+  </head>
+  <body style="overflow-y: hidden;" class="body" id="body">
+ <header class="header1">
+      <div class="container-fluid ps-5 pe-4">
+        <div class="row">
+          <div class="col-sm-2 plog  col-7">
+            <span class="iconify ddn me-2" onclick=" document.getElementById('body').classList.toggle('open');  document.getElementById('left').classList.toggle('open'); "  data-icon="iconoir:menu" style="color: black; display:none; position:relative; top: -2px" data-width="30"></span>
+              
+            <span style="font-size: 20px; font-weight: bolder; font-family: font2;" onclick="window.location='home.html';">Ok2Save</span>
+          </div>
+              <div class="col-sm-1 col-1  pt-4">
+               </div>
+            <div class="col-sm-3  p36 dn">
+             
+            </div>
+        
+           
+             <div class="col-sm-4  pt-4 dn" style="text-align:right;">
+               
+                  <button class=" button1 p-2" style="color: white;" onclick="window.location='wallet.html';"> Fund Wallet</button>
+                   <button class=" button1 p-2" style="color: white;" onclick="window.location='wallet.html';"> Withdraw</button>
+              
+              
+                
+              
+             </div>
+              <div class="col-sm-2  pt-4 col-4">
+                <div class="dropdown">
+                            <img src="../images/use.png" style="max-height:40px; cursor:pointer;"  cl  data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="iconify ms-2" data-icon="ep:arrow-down-bold" style="color: black; cursor:pointer;" data-width="17"  data-bs-toggle="dropdown" aria-expanded="false"></span>
+                <ul class="dropdown-menu mt-4 p-3" aria-labelledby="dropdownMenuButton1" style="position:relative; left: 10px;">
+    <li class="mb-2"><a class="dropdown-item" href="settings.html">Profile</a></li>
+    <li class="mb-2"><a class="dropdown-item" onclick="logout();">Log Out</a></li>
+    
+  </ul>
+            </div>
+            </div>
+            
+        </div>
+      </div>
+    </header>
+
+<div class="main">
+  <div class="left" id="left">
+    <center>
+      <p style="color:#256eff" class="font2 mb-5"><span class="iconify me-2" data-icon="fa-regular:smile" style="color: #256eff;position: relative; top: -1px;" data-width="18" style=""></span> <span id="nbv"></span></p>
+    </center>
+    <div class="ps-3 mb-4">
+      <div class="men mb-1 ps-3" style="background: white; color:#256EFF; " onclick="window.location='home.html'">
+        <p style="" class="font2 m-0"><span class="iconify me-2" data-icon="ic:round-dashboard" style="color: #256EFF; position: relative; top: -2px" data-width="25"></span>
+        Dashboard</p>
+        
+      </div>
+       <div class="men mb-1 ps-3" onclick="window.location='savings.html'">
+        <p style="" class=" m-0"><span class="iconify me-2" data-icon="ic:twotone-savings" style="color: black; position: relative; top: -2px" data-width="20"></span>
+        Savings</p>
+        
+      </div>
+       <div class="men mb-1 ps-3" onclick="window.location='investments.html'">
+        <p style="" class=" m-0"><span class="iconify me-2" data-icon="si-glyph:column-increase" style="color: black; position: relative; top: -2px" data-width="20"></span>
+        Investments</p>
+        
+      </div>
+       <div class="men mb-1 ps-3" onclick="window.location='loans.html'">
+        <p style="" class=" m-0"><span class="iconify me-2" data-icon="emojione-monotone:money-bag" style="color: black; position: relative; top: -2px" data-width="20"></span>
+        Loans</p>
+        
+      </div>
+       <div class="men mb-1 ps-3" onclick="window.location='wallet.html'">
+        <p style="" class=" m-0"><span class="iconify me-2" data-icon="mdi:wallet-plus" style="color: black; position: relative; top: -2px" data-width="20"></span>
+         Wallet</p>
+        
+      </div>
+       <div class="men mb-1 ps-3" onclick="window.location='settings.html'">
+        <p style="" class=" m-0"><span class="iconify me-2" data-icon="clarity:settings-solid" style="color: black; position: relative; top: -2px" data-width="20"></span>
+        Settings</p>
+        
+      </div>
+    </div>
+     <div class="men mb-2 ps-4" onclick="logout();">
+        <p style="font2" class=" m-0 ps-2"><span class="iconify me-2" data-icon="fontisto:power" style="color: black; position: relative; top: -2px" data-width="20"></span>
+        Log Out</p>
+        
+      </div>
+  </div>
+  <div class="right" id="main">
+   <center><img src='../images/preload.gif' class='preloaderr' style="margin-top: 20vh" ></center>
+  </div>
+</div>
+ <div class="modal fade" tabindex="-1" id="fail">
+  <div class="modal-dialog modal-sm modal-dialog-centered" style="border-radius:10px; text-align:center;">
+    <div class="modal-content">
+      
+      <div class="modal-body p-4">
+        <span>
+          <span class="iconify mb-4" data-icon="emojione-v1:cross-mark" data-width="50"></span>
+          <p class="font2">ERROR</p>
+        </span>
+        <p id="passtext">Modal body text goes here.</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" id="pass">
+  <div class="modal-dialog modal-sm modal-dialog-centered" style="border-radius:10px; text-align:center;">
+    <div class="modal-content">
+      
+      <div class="modal-body p-4">
+        <span>
+          <span class="iconify mb-4" data-icon="emojione-v1:white-heavy-check-mark" data-width="50"></span>
+          <p class="font2">SUCCESS!</p>
+        </span>
+        <p id="passtext">Modal body text goes here.</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="js/master.js"></script>
+<script type="text/javascript">
+  home();
+  
+</script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
