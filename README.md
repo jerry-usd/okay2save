@@ -1,5 +1,5 @@
 ## Live link
-https://deniji.xyz/projects/oksave
+https://deniji.xyz/projects/ok2save
 
 ## Test details
  ##### User:
